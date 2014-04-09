@@ -1,11 +1,13 @@
 <%= form_for @project do |f|%>
-
-    <%= f.label      :name %>
+  <p>
+    <%= f.label      :name %><br />
     <%= f.text_field :name %>
-
-    <%= f.label     :description %>
+  </p>
+  <p>
+    <%= f.label     :description %><br />
     <%= f.text_area :description %>
-
+  </p>
+  <p>
     <%= f.submit %>
-
+  </p>
 <% end %>
