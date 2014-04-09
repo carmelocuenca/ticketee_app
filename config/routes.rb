@@ -4,6 +4,7 @@ TicketeeApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  root 'projects#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -13,6 +14,8 @@ TicketeeApp::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+
+  resources :projects, only: [:new, :create, :show]
 
   # Example resource route with options:
   #   resources :products do
